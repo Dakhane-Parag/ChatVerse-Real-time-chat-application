@@ -9,7 +9,7 @@ import { Server } from "socket.io";
 
 const PORT = process.env.PORT || 5000;
 
-const app = express();  // used Create an express app
+const app = express(); 
 const server = http.createServer(app); //used to create a server but we are using http to create a server here because that server supports the socket.io package to be worked with.
 
 export const io = new Server(server,{cors:{origin:"*"}});
