@@ -1,0 +1,18 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@import "tailwindcss";
+
+
+*{
+    font-family: "Outfit", sans-serif;
+}
+::-webkit-scrollbar{
+  display:none;
+}
+.bg-custom {
+  background-image: url('./assets/purple1.jpg');
+  background: contain;
+  height: 100vh;
+  width:100%
+}
