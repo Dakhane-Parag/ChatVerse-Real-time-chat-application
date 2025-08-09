@@ -105,7 +105,7 @@ const ChatContainer = () => {
     <div className="flex flex-col justify-center items-center gap-3 max-md:hidden">
       <img src={assets.logo_icon} alt="" className="w-24" />
       <p className="font-bold text-lg text-white">
-        Chat karlo Privately apne bandi log ke sath!
+        Chat karlo sare dost milkar aik sath!
       </p>
       <p className="text-s text-white">Maje karo!</p>
     </div>
