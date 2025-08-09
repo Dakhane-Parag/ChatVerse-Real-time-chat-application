@@ -1,0 +1,10 @@
+# Ignore build folders from language stats
+frontend/build/* linguist-vendored
+backend/build/* linguist-vendored
+backend/dist/* linguist-vendored
+
+# Force certain files to be recognized as JavaScript
+*.js linguist-language=JavaScript
+*.jsx linguist-language=JavaScript
+*.ts linguist-language=TypeScript
+*.tsx linguist-language=TypeScript
