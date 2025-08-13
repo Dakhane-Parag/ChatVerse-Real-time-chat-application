@@ -7,7 +7,9 @@ import { AuthContext } from "../../context/AuthContext.jsx";
 const ChatContainer = () => {
 
   const{messages,selectedUser,setSelectedUser,sendMessage,getMessages,setMessages} = useContext(ChatContext);
-  const{authUser,onlineUsers,socket} = useContext(AuthContext);
+  const{authUser,onlineUsers,socket,loading} = useContext(AuthContext);
+  if (loading) return <div>Loading...</div>;
+  if (!authUser) return <div>Please log in to view chats.</div>;
 
   const[input,setInput] = useState('');
 
